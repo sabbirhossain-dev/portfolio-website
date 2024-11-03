@@ -63,14 +63,14 @@ const FormPart = () => {
   }
 
   return (
-    <div className='w-full lg:w-[60%] h-full py-10 bg-gradient-to-r from-[#1e2024] to-[#23272b] shadow-shadowOne rounded-lg p-8'>
+    <div className='w-full lg:w-[60%] h-full py-10 bg-gradient-to-r from-[#1e2024] to-[#23272b] shadow-shadowOne rounded-lg p-4 md:p-6 lg:p-8'>
             <form className='flex flex-col gap-6 py-4' onSubmit={handleSubmit}>
-              <div className='flex justify-between gap-10'>
-                <div className=' w-1/2 flex flex-col gap-2'>
+              <div className='flex flex-col lg:justify-between gap-10'>
+                <div className='w-full lg:w-1/2 flex flex-col gap-2'>
                   <label className='text-base uppercase tracking-wide'>Your Name</label>
                   <input type='text' className={`${errorMsg ==="Name is Required" && "outline-designColor"} contactInput`} onChange={(e)=>{setUserName(e.target.value)}} value={userName} />
                 </div>
-                <div className=' w-1/2 flex flex-col gap-2'>
+                <div className=' w-full lg:w-1/2 flex flex-col gap-2'>
                   <label className='text-base uppercase tracking-wide'>Phone</label>
                   <input type='text' className={`${errorMsg ==="Phone Number is Required" && "outline-designColor"} contactInput`} onChange={(e)=>{setPhone(e.target.value)}} value={phone} />
                 </div>

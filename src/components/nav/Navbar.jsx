@@ -21,7 +21,7 @@ const Navbar = () => {
             <ul className='hidden xl:flex  mx-auto items-center gap-10 font-titleFont'>
                 {navData.map(({id,title,link})=>{
                     return <li key={id} className='text-base text-gray-400 tracking-wide cursor-pointer hover:text-designColor duration-300'>
-                    <Link 
+                    <Link  
                     activeClass="active" 
                     to={link} 
                     spy={true} 
@@ -44,12 +44,12 @@ const Navbar = () => {
             className='flex flex-col items-center py-20 text-2xl w-full h-screen bg-gradient-to-b from-black to-gray-600 gap-5 absolute top-24 left-0 xl:hidden'>
               {navData.map(({id,title,link})=>{
                     return <li key={id} className='text-2xl text-gray-400 tracking-wide cursor-pointer hover:text-designColor duration-300'>
-                    <Link 
+                    <Link  onClick={()=>{setNavToggle(false)}}
                     activeClass="active" 
                     to={link} 
                     spy={true} 
                     smooth={true} 
-                    offset={50} 
+                    offset={-70} 
                     duration={500} 
                     >
                     {title}
