@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
 import {FaBars, FaTimes} from 'react-icons/fa'
 
-// import {logo} from '../../assets/images/index'
+import {logo} from '../../assets/images/index'
 import { navData } from '../../constants'
 
 const Navbar = () => {
@@ -13,9 +13,9 @@ const Navbar = () => {
   return (
       <div className='w-full h-24 py-5 flex justify-between items-center mx-auto sticky z-50 top-0 bg-bodyColor border-b-[1px] border-gray-600'>
       <div>
-        {/* <a href=''>
+        <a href=''>
             <img src={logo} alt='Logo'/>
-        </a> */}
+        </a>
       </div>
         <div className='ml-auto'>
             <ul className='hidden xl:flex  mx-auto items-center gap-10 font-titleFont'>
