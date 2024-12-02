@@ -22,7 +22,7 @@ function SampleNextArrow(props) {
     const { onClick } = props;
     return (
       <div
-        className="w-10 h-8 md:w-12 md:h-10 lg:w-14 lg:h-12 bg-[#0c1821] hover:bg-black duration-300 rounded-md text-xl lg:text-2xl text-gray-400 flex justify-center items-center absolute top-0 right-28 lg:right-40 shadow-shadowOne cursor-pointer z-10"
+        className="w-10 h-8 md:w-12 md:h-10 lg:w-14 lg:h-12 bg-[#0c1821] hover:bg-black duration-300 rounded-md text-xl lg:text-2xl text-gray-400 flex justify-center items-center absolute top-0 right-24 lg:right-40 shadow-shadowOne cursor-pointer z-10"
         onClick={onClick}
       >
         <FaArrowLeft />
@@ -56,7 +56,7 @@ const Testimonial = () => {
                 width: "12px",
                 height:"12px",
                 borderRadius:"50%",
-                background:"#ff014f",
+                background:"#7624c4",
                 cursor:"pointer"
                 
               }:{

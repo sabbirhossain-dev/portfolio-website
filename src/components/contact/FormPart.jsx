@@ -9,7 +9,7 @@ const FormPart = () => {
   const [subject, setSubject] = useState("")
   const [message, setMessage] = useState("")
   const [errorMsg, setErrorMsg] = useState("")
-  const [SuccessMsg, setSuccessMsg] = useState("")
+  const [successMsg, setSuccessMsg] = useState("")
   
   const handleSubmit =(e)=>{
     e.preventDefault()
@@ -65,7 +65,7 @@ const FormPart = () => {
   return (
     <div className='w-full lg:w-[60%] h-full py-10 bg-gradient-to-r from-[#1e2024] to-[#23272b] shadow-shadowOne rounded-lg p-4 md:p-6 lg:p-8'>
             <form className='flex flex-col gap-6 py-4' onSubmit={handleSubmit}>
-              <div className='flex flex-col lg:justify-between gap-10'>
+              <div className='flex flex-col md:flex-row gap-10'>
                 <div className='w-full lg:w-1/2 flex flex-col gap-2'>
                   <label className='text-base uppercase tracking-wide'>Your Name</label>
                   <input type='text' className={`${errorMsg ==="Name is Required" && "outline-designColor"} contactInput`} onChange={(e)=>{setUserName(e.target.value)}} value={userName} />
@@ -95,7 +95,7 @@ const FormPart = () => {
                 errorMsg && <p className='w-full py-3 bg-[#1e2024] shadow-shadowOne rounded-lg text-red-700 text-base tracking-wide text-center animate-bounce'>{errorMsg}</p>
                }
                {
-                SuccessMsg && <p className='w-full py-3 bg-[#1e2024] shadow-shadowOne rounded-lg text-green-500 text-base tracking-wide text-center animate-bounce'>{SuccessMsg}</p>
+                successMsg && <p className='w-full py-3 bg-[#1e2024] shadow-shadowOne rounded-lg text-green-500 text-base tracking-wide text-center animate-bounce'>{successMsg}</p>
                }
                <button type='submit' className='w-full py-4 rounded-lg shadow-shadowOne flex justify-center items-center bg-[#191b1e] mt-2 hover:bg-green-950 bg-opacity-20 duration-300'>
                 <p className='text-base uppercase tracking-wide '>Send Message</p>

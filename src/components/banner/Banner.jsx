@@ -19,11 +19,11 @@ const Banner = () => {
      id="home" className='w-full h-auto pb-20 border-black border-b-[1px]'>
       
       <div className='flex flex-col xl:flex-row'>
-        <div className='w-full xl:w-1/2 flex flex-col gap-20'>
+        <div className='w-full xl:w-1/2 flex flex-col gap-10  md:gap-16'>
             <div className='flex flex-col pt-8 gap-4 xl:pt-[200px]'>
-                <h4 className='text-lightText text-xl'>WELCOME TO MY WORLD</h4>
-                <h1 className='text-white text-6xl font-bold'>Hi, I'm <span className='text-designColor'>Jhon Doe</span></h1>
-                <h2 className='text-4xl text-white font-bold '>a <span>
+                <h4 className='text-lightText text-lg md:text-xl'>WELCOME TO MY WORLD</h4>
+                <h1 className='text-white  text-4xl md:text-6xl font-bold'>Hi, I'm <span className='text-designColor'>Jhon Doe</span></h1>
+                <h2 className='text-2xl md:text-4xl text-white font-bold '>a <span>
                 <Typewriter
                 words={['Frontend Developer', 'Web Designer', 'Photographer!']}
                 loop={true}
@@ -66,7 +66,7 @@ const Banner = () => {
 
         <div className='w-full xl:w-1/2 flex justify-center items-center relative pt-10'>
             <img src={bannerImg} alt='bannerImg' className='w-[300px] h-[380px] xl:w-[500px] xl:h-[650px] z-10' />
-            <div className='absolute bottom-0 flex justify-center items-center h-[300px] w-[300px]  xl:h-[500px] xl:w-[500px] bg-gradient-to-r from-slate-950 to-gray-800 opacity-30 shadow-shadowOne'></div>
+            <div className='absolute bottom-0 flex justify-center items-center h-[300px] w-[300px]  xl:h-[500px] xl:w-[500px] bg-gradient-to-r from-purple-950 to-gray-800 opacity-30 shadow-shadowOne'></div>
         </div>
       </div>
     </motion.section>

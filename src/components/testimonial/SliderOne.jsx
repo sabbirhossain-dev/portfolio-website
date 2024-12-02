@@ -8,9 +8,9 @@ const SliderOne = () => {
   return (
     <>
      <div className='max-w-[90%] h-auto lg:h-[500px] mx-auto flex flex-col lg:flex-row justify-between'>
-            <div className='w-full lg:w-[35%] h-full bg-gradient-to-r from-[#1e2024] to-[#23272b] p-4 lg:p-8 rounded-lg shadow-shadowOne flex gap-4 lg:flex-col lg:gap-8'>
+            <div className='w-full lg:w-[35%] h-full bg-gradient-to-r from-[#1e2024] to-[#23272b] p-4 lg:p-8 rounded-lg shadow-shadowOne flex flex-col sm:flex-row gap-4 lg:flex-col lg:gap-8'>
                 <img src={testimonialOne} alt='testimonialImg' className='h-40 w-40 md:w-56 lg:w-full lg:h-72 object-cover rounded-lg' />
-                <div className='flex flex-col ml-4 md:ml-10 lg:ml-0 justify-center lg:block'>
+                <div className='flex flex-col ml-0 md:ml-10 lg:ml-0 justify-center lg:block'>
                     <p className='text-xs uppercase text-designColor tracking-wide pb-2'>Bound - Trolola</p>
                     <h3 className='text-xl lg:text-2xl font-bold'>Jone Duone Joe</h3>
                     <p className='text-base text-gray-300 tracking-wide'>Operation Officer</p>

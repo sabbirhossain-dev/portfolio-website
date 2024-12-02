@@ -4,7 +4,7 @@ import { FaGit, FaGithub, FaGlobe } from 'react-icons/fa'
 const Card = ({src,title,desc}) => {
   return (
     <div>
-      <div className='w-full px-12 h-auto pt-12 pb-8  rounded-lg shadow-shadowOne flex flex-col gap-8 items-center bg-gradient-to-r from-bodyColor to-[#1e2024] group hover:bg-gradient-to-b hover:from-black hover:to-[#1e2024] transition-colors duration-100'>
+      <div className='w-full px-2 sm:px-4 md:px-8 lg:px-12 h-auto pt-5 md:pt-12 pb-8  rounded-lg shadow-shadowOne flex flex-col gap-8 items-center bg-gradient-to-r from-bodyColor to-[#1e2024] group hover:bg-gradient-to-b hover:from-black hover:to-[#1e2024] transition-colors duration-100'>
       
       <div>
       <div className='w-full h-[80%] rounded-lg overflow-hidden'>
